@@ -63,9 +63,8 @@ h1 .f { color: var(--franz); } h1 .e { color: var(--eddy); }
 
 .who { display: grid; grid-template-columns: 6px 1fr; }
 .who + .who { border-top: 1px solid var(--line); }
-.who::before { content: ""; }
-.who.franz::before { background: var(--franz); }
-.who.eddy::before { background: var(--eddy); }
+.who.franz > span { background: var(--franz); }
+.who.eddy > span { background: var(--eddy); }
 .who-b { padding: 14px 16px; display: grid; gap: 6px; min-width: 0; }
 .name { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .name b { font: 800 1.5rem/1 var(--f-display); text-transform: uppercase; }
