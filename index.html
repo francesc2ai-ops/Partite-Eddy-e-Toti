@@ -66,7 +66,7 @@ h1 .f { color: var(--franz); } h1 .e { color: var(--eddy); }
 .who.franz > span { background: var(--franz); }
 .who.eddy > span { background: var(--eddy); }
 .who-b { padding: 14px 16px; display: grid; gap: 6px; min-width: 0; }
-.name { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.name { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .name b { font: 800 1.5rem/1 var(--f-display); text-transform: uppercase; }
 .franz .name b { color: var(--franz); } .eddy .name b { color: var(--eddy); }
 .name small { color: var(--muted); font-size: .85rem; }
@@ -83,6 +83,22 @@ h1 .f { color: var(--franz); } h1 .e { color: var(--eddy); }
 .franz .maps { background: var(--franz); } .eddy .maps { background: var(--eddy); }
 :root[data-theme="dark"] .maps, :root:not([data-theme="light"]) .maps { color: #ffffff; }
 .maps svg { width: 18px; height: 18px; }
+.ball { margin-left: auto; width: 26px; height: 26px; color: var(--muted); display: inline-flex; }
+.franz .ball { color: var(--franz); } .eddy .ball { color: var(--eddy); }
+.ball svg { width: 100%; height: 100%; }
+details.week summary { list-style: none; cursor: pointer; align-items: center; flex-wrap: nowrap; border-bottom: 0; }
+details.week summary::-webkit-details-marker { display: none; }
+details.week[open] summary { border-bottom: 1px solid var(--line); }
+details.week .sx { display: grid; gap: 4px; min-width: 0; }
+details.week .sx > b { font: 800 1.15rem/1.1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; }
+.minis { display: flex; gap: 6px 14px; flex-wrap: wrap; font-size: .9rem; color: var(--ink); }
+.mini b { font-weight: 700; }
+.mini.franz b { color: var(--franz); } .mini.eddy b { color: var(--eddy); }
+.mini.off { color: var(--muted); }
+.chev { width: 22px; height: 22px; flex: none; color: var(--muted); transition: transform .2s; display: inline-flex; }
+.chev svg { width: 100%; height: 100%; }
+details[open] .chev { transform: rotate(180deg); }
+summary:focus-visible { outline: 3px solid var(--ink); outline-offset: -3px; }
 .maps:focus-visible, .more:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
 .none { font: 700 1.2rem/1.2 var(--f-display); text-transform: uppercase; color: var(--muted); letter-spacing: .04em; }
 .played { opacity: .55; }
@@ -118,6 +134,9 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
 
   const icoPin = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>';
   const icoHome = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>';
+  const icoVolley = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M12 2.8c-1.6 3.4-1.4 6.6.2 9.2"/><path d="M12.2 12c3.2.3 6.2-.9 8.6-3.6"/><path d="M12.2 12c-1.7 2.8-4.6 4.4-8.4 4.6"/><path d="M7 4.4c3 .6 6.7 3.4 8.3 7.2 1 2.5 1 5.4.1 8.6"/></svg>';
+  const icoFoot = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M12 8l3.3 2.4-1.3 3.9h-4l-1.3-3.9z" fill="currentColor"/><path d="M12 8V3M15.3 10.4l4.5-1.6M14 14.3l2.8 3.9M10 14.3l-2.8 3.9M8.7 10.4L4.2 8.8"/></svg>';
+  const icoChev = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
   const icoPlane = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 15.5v-2l-8-5V3.8a1.5 1.5 0 0 0-3 0v4.7l-8 5v2l8-2.5v5l-2 1.5V21l3.5-1 3.5 1v-1.5l-2-1.5v-5z"/></svg>';
 
   function normFranz(j) {
@@ -140,7 +159,7 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
         '<a class="maps" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.q) + '" target="_blank" rel="noopener">' + icoPin + 'Google Maps</a>' +
         '</div>';
     }
-    return '<div class="who ' + cls + '"><span></span><div class="who-b"><div class="name"><b>' + nome + '</b><small>' + sport + '</small></div>' + body + '</div></div>';
+    return '<div class="who ' + cls + '"><span></span><div class="who-b"><div class="name"><b>' + nome + '</b><small>' + sport + '</small><i class="ball" title="' + (cls === 'franz' ? 'Pallavolo' : 'Calcio') + '">' + (cls === 'franz' ? icoVolley : icoFoot) + '</i></div>' + body + '</div></div>';
   }
 
   let mostrate = 4;
@@ -162,7 +181,7 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
     const eddyVuoto = !eddy.lista.length;
 
     box.style.display = "grid"; box.style.gap = "18px";
-    box.innerHTML = tutte.slice(0, mostrate).map(w => {
+    box.innerHTML = tutte.map(w => {
       const sab = new Date(w.lun); sab.setDate(sab.getDate() + 5);
       const dom = new Date(w.lun); dom.setDate(dom.getDate() + 6);
       const diff = Math.round((w.lun.getTime() - lunOggi) / (7 * 86400000));
@@ -171,10 +190,16 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
       const righe = [];
       (w.franz.length ? w.franz : [null]).forEach(p => righe.push(riga("franz", franz.nome, franz.sport, p, false)));
       (w.eddy.length ? w.eddy : [null]).forEach(p => righe.push(riga("eddy", eddy.nome, eddy.sport, p, eddyVuoto)));
-      return '<section class="week' + (diff === 0 ? ' now' : '') + '"><div class="week-h"><b>' + titolo + '</b><span>' + date + '</span></div>' + righe.join("") + '</section>';
+      if (diff <= 1) return '<section class="week' + (diff === 0 ? ' now' : '') + '"><div class="week-h"><b>' + titolo + '</b><span>' + date + '</span></div>' + righe.join("") + '</section>';
+      const breve = (lista, nome, cls) => {
+        const p = lista.find(x => !x.riposo);
+        const txt = p ? GIORNI[p.d.getDay()].slice(0, 3) + ' ' + p.d.getDate() + (p.oraDubbia ? '' : ' · ' + pad(p.d.getHours()) + ':' + pad(p.d.getMinutes())) : 'nessuna partita';
+        return '<span class="mini ' + cls + (p ? '' : ' off') + '"><b>' + nome + '</b> ' + txt + '</span>';
+      };
+      return '<details class="week"><summary class="week-h"><span class="sx"><b>' + date + '</b><span class="minis">' + breve(w.franz, franz.nome, 'franz') + breve(w.eddy, eddy.nome, 'eddy') + '</span></span><i class="chev">' + icoChev + '</i></summary>' + righe.join("") + '</details>';
     }).join("");
     const more = document.getElementById("more");
-    more.hidden = tutte.length <= mostrate;
+    more.hidden = true;
     more.onclick = () => { mostrate = tutte.length; render(franz, eddy); };
   }
 
@@ -192,8 +217,8 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
           fetch("data/eddy.json", { cache: "no-store" }).then(r => r.json())
         ]);
       }
-      const franz = { nome: fmeta.nome, sport: fmeta.sport + " · " + fmeta.squadra, lista: normFranz(fj) };
-      const eddy = { nome: ej.nome, sport: ej.sport + " · " + ej.squadra, lista: normEddy(ej) };
+      const franz = { nome: fmeta.nome, sport: fmeta.squadra, lista: normFranz(fj) };
+      const eddy = { nome: ej.nome, sport: ej.squadra, lista: normEddy(ej) };
       render(franz, eddy);
       setInterval(() => render(franz, eddy), 300000);
     } catch (e) {
