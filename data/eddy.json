@@ -1,0 +1,271 @@
+{
+  "nome": "Eddy",
+  "squadra": "Carugo Academy",
+  "sport": "Calcio",
+  "campionato": "Terza Categoria Monza · Girone B",
+  "_nota": "Generato da scripts/eddy_da_calendario.py dal calendario LND. Per uno spostamento modifica qui inizio (AAAA-MM-GGTHH:MM). ora_da_confermare = orario federale.",
+  "partite": [
+    {
+      "giornata": 1,
+      "inizio": "2026-09-13T15:00",
+      "ora_da_confermare": true,
+      "casa": false,
+      "avversario": "Stella Azzurra Arosio",
+      "campo": "Campo \"Franco Nigro\"",
+      "indirizzo": "Piazza della Chiesa 1, Arosio (CO)"
+    },
+    {
+      "giornata": 2,
+      "inizio": "2026-09-20T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Brigantia Calcio",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 3,
+      "inizio": "2026-09-27T18:00",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Desio Academy San Giorgio",
+      "campo": "C.S. Comunale",
+      "indirizzo": "Via S. Caterina da Siena 1, Sovico (MB)"
+    },
+    {
+      "giornata": 4,
+      "inizio": "2026-10-04T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Cabiate",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 5,
+      "inizio": "2026-10-11T15:00",
+      "ora_da_confermare": true,
+      "casa": false,
+      "avversario": "Campagnola Don Bosco",
+      "campo": "C.S. Comunale - Campo n.1",
+      "indirizzo": "Via G. Deledda 24, Lissone (MB)"
+    },
+    {
+      "giornata": 6,
+      "inizio": "2026-10-18T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "San Marco O.S.F.",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 7,
+      "inizio": "2026-10-25T19:00",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Milano Guardians",
+      "campo": "Campo \"Breda\" B",
+      "indirizzo": "Via XX Settembre 162, Sesto San Giovanni (MI)"
+    },
+    {
+      "giornata": 8,
+      "inizio": "2026-11-01T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Football Sesto 2025",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 9,
+      "inizio": "2026-11-08T15:00",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Inverigo",
+      "campo": "Campo \"Pietro Rossini\"",
+      "indirizzo": "Via Magellano, Briosco (MB)"
+    },
+    {
+      "giornata": 10,
+      "inizio": "2026-11-15T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Serenissima S. Pio X",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 11,
+      "inizio": "2026-11-22T15:00",
+      "riposo": true
+    },
+    {
+      "giornata": 12,
+      "inizio": "2026-11-29T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Sportinzona Melina Miele",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 13,
+      "inizio": "2026-12-06T15:00",
+      "ora_da_confermare": true,
+      "casa": false,
+      "avversario": "San Fruttuoso Calcio",
+      "campo": "C.S. Comunale della Boscherona",
+      "indirizzo": "Via della Boscherona, Monza (MB)"
+    },
+    {
+      "giornata": 14,
+      "inizio": "2026-12-13T17:30",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Stella Azzurra 56",
+      "campo": "Oratorio San Luigi Gonzaga",
+      "indirizzo": "Viale Rinascita, Cinisello Balsamo (MI)"
+    },
+    {
+      "giornata": 15,
+      "inizio": "2026-12-20T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Novese Gunners",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 16,
+      "inizio": "2027-01-10T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Stella Azzurra Arosio",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 17,
+      "inizio": "2027-01-16T20:00",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Brigantia Calcio",
+      "campo": "C.S. Comunale",
+      "indirizzo": "Via S. Caterina da Siena 1, Sovico (MB)"
+    },
+    {
+      "giornata": 18,
+      "inizio": "2027-01-24T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Desio Academy San Giorgio",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 19,
+      "inizio": "2027-01-31T15:00",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Cabiate",
+      "campo": "C.S. Comunale - Campo A",
+      "indirizzo": "Via Bruno Buozzi 30, Cabiate (CO)"
+    },
+    {
+      "giornata": 20,
+      "inizio": "2027-02-07T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Campagnola Don Bosco",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 21,
+      "inizio": "2027-02-14T14:00",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "San Marco O.S.F.",
+      "campo": "Parrocchia Sacra Famiglia n.1",
+      "indirizzo": "Piazza Sacra Famiglia 1, Cinisello Balsamo (MI)"
+    },
+    {
+      "giornata": 22,
+      "inizio": "2027-02-21T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Milano Guardians",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 23,
+      "inizio": "2027-02-28T18:30",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Football Sesto 2025",
+      "campo": "Comunale S. Pertini n.1",
+      "indirizzo": "Via Giovanni Boccaccio 285, Sesto San Giovanni (MI)"
+    },
+    {
+      "giornata": 24,
+      "inizio": "2027-03-07T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Inverigo",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 25,
+      "inizio": "2027-03-14T15:00",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Serenissima S. Pio X",
+      "campo": "Comunale \"D. Crippa\" - Campo 1",
+      "indirizzo": "Via dei Lavoratori 27, Cinisello Balsamo (MI)"
+    },
+    {
+      "giornata": 26,
+      "inizio": "2027-03-21T15:00",
+      "riposo": true
+    },
+    {
+      "giornata": 27,
+      "inizio": "2027-04-03T20:00",
+      "ora_da_confermare": false,
+      "casa": false,
+      "avversario": "Sportinzona Melina Miele",
+      "campo": "C.S. Comunale \"Cameroni\"",
+      "indirizzo": "Via Bechi 2, Milano"
+    },
+    {
+      "giornata": 28,
+      "inizio": "2027-04-11T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "San Fruttuoso Calcio",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 29,
+      "inizio": "2027-04-18T15:00",
+      "ora_da_confermare": false,
+      "casa": true,
+      "avversario": "Stella Azzurra 56",
+      "campo": "Campo Sportivo Comunale",
+      "indirizzo": "Via delle Ginestre 5, Carugo (CO)"
+    },
+    {
+      "giornata": 30,
+      "inizio": "2027-04-25T15:00",
+      "ora_da_confermare": true,
+      "casa": false,
+      "avversario": "Novese Gunners",
+      "campo": "C.S. Comunale n.2",
+      "indirizzo": "Via G. Brodolini 2, Nova Milanese (MB)"
+    }
+  ]
+}
