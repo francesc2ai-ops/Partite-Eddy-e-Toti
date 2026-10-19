@@ -159,7 +159,7 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
         '<a class="maps" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.q) + '" target="_blank" rel="noopener">' + icoPin + 'Google Maps</a>' +
         '</div>';
     }
-    return '<div class="who ' + cls + '"><span></span><div class="who-b"><div class="name"><b>' + nome + '</b><small>' + sport + '</small><i class="ball" title="' + (cls === 'franz' ? 'Pallavolo' : 'Calcio') + '">' + (cls === 'franz' ? icoVolley : icoFoot) + '</i></div>' + body + '</div></div>';
+    return '<div class="who ' + cls + '"><span></span><div class="who-b"><div class="name"><b>' + nome + '</b><small>' + sport + '</small></div>' + body + '</div></div>';
   }
 
   let mostrate = 4;

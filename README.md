@@ -4,7 +4,7 @@ Una pagina per sapere dove giocano Toti ed Eddy ogni weekend: una scheda per wee
 con giorno, data, ora, campo e il pulsante Google Maps. Se uno dei due non gioca compare
 "Nessuna partita" (o "Riposo").
 
-- **Toti** (pallavolo, Lissone): le partite arrivano in automatico dalla pagina del Gaffeo
+- **Toti** (pallavolo, Gaffeo Lissone): le partite arrivano in automatico dalla pagina del Gaffeo
   (`data/toti.json` indica da dove). Se aggiorni quel calendario, si aggiorna anche qui.
 - **Eddy** (calcio, Carugo Academy, Terza Categoria Monza girone B): le partite sono in
   `data/eddy.json`, ricavate dal calendario LND (`data/calendario_terza_monza_girB.pdf`) con
